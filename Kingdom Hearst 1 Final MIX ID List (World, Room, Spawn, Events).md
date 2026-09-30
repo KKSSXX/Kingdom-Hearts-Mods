@@ -301,3 +301,8 @@
 | | 0x24 | The Void (Heartless) |
 | | 0x25 | The Void (Heartless) |
 | | 0x26 | The Void (Heartless) |
+
+# Spawn Points
+
+
+# Events
