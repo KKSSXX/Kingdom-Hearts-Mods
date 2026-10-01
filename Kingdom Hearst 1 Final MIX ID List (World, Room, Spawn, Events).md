@@ -260,49 +260,126 @@
 | | 0x0F | Dark Depths |
 | | 0x10 | Castle Chapel |
 
-| World | Index | Location Name |
-|-------|-------|---------------|
-| **End of the World** | 0x00 | Gate to the Dark |
-| | 0x01 | Final Dimension |
-| | 0x02 | Final Dimension |
-| | 0x03 | Final Dimension |
-| | 0x04 | Final Dimension |
-| | 0x05 | Final Dimension |
-| | 0x06 | Final Dimension |
-| | 0x07 | Final Dimension |
-| | 0x08 | Final Dimension |
-| | 0x09 | Final Dimension |
-| | 0x0A | Final Dimension |
-| | 0x0B | Final Dimension |
-| | 0x0C | Final Dimension |
-| | 0x0D | Dark Sphere |
-| | 0x0E | Giant Crevasse |
-| | 0x0F | World Terminus |
-| | 0x10 | World Terminus (Traverse Town) |
-| | 0x11 | World Terminus (Wonderland) |
-| | 0x12 | World Terminus (Olympus Coliseum) |
-| | 0x13 | World Terminus (Deep Jungle) |
-| | 0x14 | World Terminus (Agrabah) |
-| | 0x15 | World Terminus (Atlantica) |
-| | 0x16 | World Terminus (Halloween Town) |
-| | 0x17 | World Terminus (Neverland) |
-| | 0x18 | World Terminus (100 Acre Wood) |
-| | 0x19 | World Terminus (Hollow Bastion) |
-| | 0x1A | Evil Grounds |
-| | 0x1B | Volcanic Crater |
-| | 0x1C | Linked Worlds |
-| | 0x1D | Final Rest |
-| | 0x1E | Homecoming |
-| | 0x1F | Destiny Islands |
-| | 0x20 | Final Door |
-| | 0x21 | The Void |
-| | 0x22 | Crater |
-| | 0x23 | Homecoming |
-| | 0x24 | The Void (Heartless) |
-| | 0x25 | The Void (Heartless) |
-| | 0x26 | The Void (Heartless) |
+## End of the World
+| Index | Location Name |
+|-------|---------------|
+| 0x00 | Gate to the Dark |
+| 0x01 | Final Dimension |
+| 0x02 | Final Dimension |
+| 0x03 | Final Dimension |
+| 0x04 | Final Dimension |
+| 0x05 | Final Dimension |
+| 0x06 | Final Dimension |
+| 0x07 | Final Dimension |
+| 0x08 | Final Dimension |
+| 0x09 | Final Dimension |
+| 0x0A | Final Dimension |
+| 0x0B | Final Dimension |
+| 0x0C | Final Dimension |
+| 0x0D | Dark Sphere |
+| 0x0E | Giant Crevasse |
+| 0x0F | World Terminus |
+| 0x10 | World Terminus (Traverse Town) |
+| 0x11 | World Terminus (Wonderland) |
+| 0x12 | World Terminus (Olympus Coliseum) |
+| 0x13 | World Terminus (Deep Jungle) |
+| 0x14 | World Terminus (Agrabah) |
+| 0x15 | World Terminus (Atlantica) |
+| 0x16 | World Terminus (Halloween Town) |
+| 0x17 | World Terminus (Neverland) |
+| 0x18 | World Terminus (100 Acre Wood) |
+| 0x19 | World Terminus (Hollow Bastion) |
+| 0x1A | Evil Grounds |
+| 0x1B | Volcanic Crater |
+| 0x1C | Linked Worlds |
+| 0x1D | Final Rest |
+| 0x1E | Homecoming |
+| 0x1F | Destiny Islands |
+| 0x20 | Final Door |
+| 0x21 | The Void |
+| 0x22 | Crater |
+| 0x23 | Homecoming |
+| 0x24 | The Void (Heartless) |
+| 0x25 | The Void (Heartless) |
+| 0x26 | The Void (Heartless) |
 
 # Spawn Points
-
+## Traverse Town
+| ID   | Location Description                          |
+|------|-----------------------------------------------|
+| 0x00 | 1st District - World Entrance                 |
+| 0x01 | 1st District - 2nd District Entrance          |
+| 0x02 | 1st District - 3rd District Entrance          |
+| 0x03 | 1st District - Item Shop Double Door Entrance |
+| 0x04 | 1st District - Item Shop Stairs Door Entrance |
+| 0x05 | 1st District - Accessory Shop Door Entrance   |
+| 0x06 | 1st District - Item Workshop Entrance         |
+| 0x07 | 1st District - Alley Way Red Trinity Entrance |
+| 0x08 | 2nd District - 1st District Entrance          |
+| 0x09 | 2nd District - 3rd District Entrance          |
+| 0x0A | 2nd District - Alleyway 1st Door Entrance     |
+| 0x0B | 2nd District - Hotel 1st Door Entrance        |
+| 0x0C | 2nd District - Hotel 2nd Door Entrance        |
+| 0x0D | 2nd District - Gizmo Shop Entrance            |
+| 0x0E | 2nd District - Gizmo Shop Ladder Entrance     |
+| 0x0F | 2nd District - Dalmatians House Entrance      |
+| 0x10 | 2nd District - 3rd District Roof Door Entrance|
+| 0x11 | 3rd District - Cutscene Spawn                 |
+| 0x12 | 3rd District - Roof Cutscene Spawn            |
+| 0x13 | 3rd District - Riku Cutscene                  |
+| 0x14 | 3rd District - Maleficent Cutscene            |
+| 0x15 | 3rd District - Sora / Donald / Goofy Cutscene Spawn |
+| 0x16 | Small House - Cutscene Spawn                  |
+| 0x17 | Dalmatians Den - Alleyway Entrance            |
+| 0x18 | Dalmatians Den - Dining Room Entrance         |
+| 0x19 | Dining Room - Dalmatians Den Entrance         |
+| 0x1A | Dining Room - Living Room Entrance            |
+| 0x1B | Living Room - Dining Room Entrance            |
+| 0x1C | Living Room - Piano Room Entrance             |
+| 0x1D | Piano Room - Living Room Entrance             |
+| 0x1E | Piano Room - 2nd District Entrance            |
+| 0x1F | Gizmo Shop - 2nd District Entrance            |
+| 0x20 | Gizmo Shop - 2nd District Ladder Entrance     |
+| 0x21 | Alleyway - Red Trinity Entrance               |
+| 0x22 | Alleyway - 2nd District Fountain Door Entrance|
+| 0x23 | Alleyway - Dalmatians House Entrance          |
+| 0x24 | Alleyway - Green Room Entrance                |
+| 0x25 | Alleyway - Red Room Entrance                  |
+| 0x26 | Green Room - Alleyway Entrance                |
+| 0x27 | Green Room - Red Room Entrance                |
+| 0x28 | Green Room - Hotel Hallway Entrance           |
+| 0x29 | Red Room - Alleyway Entrance                  |
+| 0x2A | Red Room - Green Room Entrance                |
+| 0x2B | Red Room - Hotel Hallway Entrance             |
+| 0x2C | Hotel Hallway - Green Room Entrance           |
+| 0x2D | Hotel Hallway - Red Room Entrance             |
+| 0x2E | Hotel - 2nd District 2nd Door Entrance        |
+| 0x2F | Hotel - 2nd District 1st Door Entrance        |
+| 0x30 | Alleyway - Secret Waterway Entrance           |
+| 0x31 | Item Shop - Double Doors Entrance             |
+| 0x32 | Item Shop - Stairs Door Entrance              |
+| 0x33 | Accessory Shop - Door Entrance                |
+| 0x34 | Item Workshop - Door Entrance                 |
+| 0x35 | Accessory Shop - Ladder Entrance              |
+| 0x36 | Item Workshop - Ladder Entrance               |
+| 0x37 | Mystical House - 3rd District Fire Door Entrance |
+| 0x38 | Mystical House - Magician´s Study Entrance    |
+| 0x39 | Geppetto´s House - Door Entrance              |
+| 0x3A | Empty House - Mystical House Entrance         |
+| 0x3B | Magician´s Study - Mystical House Entrance    |
+| 0x3C | Magician´s Study - Exit Magician´s Lab Entrance |
+| 0x3D | Magician´s Study - Secret Waterway Entrance   |
+| 0x3E | Magician´s Lab - Merlin Talk Entrance         |
+| 0x3F | Secret Waterway - Magician´s Study Entrance   |
+| 0x40 | Secret Waterway - Alleyway Entrance           |
+| 0x41 | 1st District - Geppetto´s House Entrance      |
+| 0x42 | 3rd District - Small House Entrance           |
+| 0x43 | Small House - 3rd District Entrance           |
+| 0x44 | 3rd District - Armor Boss                     |
+| 0x45 | 3rd District - Armor Boss                     |
+| 0x46 | 3rd District - 1st District Entrance          |
+| 0x47 | 3rd District - 2nd District Roof Entrance     |
+| 0x48 | 3rd District - Mystical House Entrance        |
+| 0x49 | 3rd District - 2nd District Entrance          |
 
 # Events
