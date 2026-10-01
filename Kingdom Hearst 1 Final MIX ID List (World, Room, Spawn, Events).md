@@ -318,6 +318,10 @@
 | 0x26 | The Void (Heartless) |
 
 # Spawn Points
+## Dive Into Heart
+## Destiny Island
+## Disney Castle
+
 ## Traverse Town
 | ID   | Location Description                          |
 |------|-----------------------------------------------|
@@ -395,5 +399,17 @@
 | 0x47 | 3rd District - 2nd District Roof Entrance     |
 | 0x48 | 3rd District - Mystical House Entrance        |
 | 0x49 | 3rd District - 2nd District Entrance          |
+
+## Wonderland
+## Deep Jungle
+## 100 Acre Woods
+## Agrabah
+## Atlantica
+## Halloween Town
+## Olympus
+## Monstro
+## Neverland
+## Hollow Bastion
+## End of the World
 
 # Events
