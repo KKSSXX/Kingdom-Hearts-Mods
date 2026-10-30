@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="46">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>45368</ID>
+      <Description>"Hit Range"</Description>
+      <Options moHideChildren="1"/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+aobscanmodule(HitRange,$process,F3 0F 59 41 20 F3 0F 58 43 0C F3 0F 11 43 0C F3)
+RegisterSymbol(HitRange)
+alloc(newmem,128,HitRange)
+label(return)
+label(rangemult)
+
+newmem:
+  mulss xmm0,[rcx+20]
+  mulss xmm0,[rangemult]
+  jmp return
+
+rangemult:
+  dd (float)999
+
+HitRange:
+  jmp newmem
+return:
+
+[DISABLE]
+HitRange:
+  db F3 0F 59 41 20
+dealloc(newmem)
+UnRegisterSymbol(HitRange)
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>45369</ID>
+      <Description>"Rapid Fire"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+aobscanmodule(rapidfire,$process,85 D2 74 10 41 85 90 E0 03 00 00 74 07)
+aobscanmodule(rapidfirecrashfix,$process,0F 85 AD 00 00 00 41 0F BA E1 0A 0F 82 A2 00 00 00 48)
+aobscanmodule(attackload,$process,48 89 9C 24 98 00 00 00 8B 59 30 8B C3 48 89 74 24 68 25 C0)
+aobscanmodule(attackcompare,$process,33 C0 E9 00 04 00 00)
+alloc(newmem,128,rapidfire)
+label(allowattack)
+label(blockmagic)
+
+rapidfirecrashfix:
+  db 90 90 90 90 90 90
+
+newmem:
+  test edx,edx
+  je allowattack
+  test [r8+3E0],edx
+  je allowattack
+  push rax
+  push rdx
+  rdtsc
+  test al,0F
+  pop rdx
+  pop rax
+  je allowattack
+  jmp blockmagic
+allowattack:
+  jmp attackload
+blockmagic:
+  jmp attackcompare
+
+rapidfire:
+  jmp newmem
+  nop 8
+
+[DISABLE]
+rapidfirecrashfix:
+  db 0F 85 AD 00 00 00
+rapidfire:
+  db 85 D2 74 10 41 85 90 E0 03 00 00 74 07
+dealloc(newmem)
+
+</AssemblerScript>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>
