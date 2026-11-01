@@ -37,10 +37,6 @@ gummiworldcurrentworld = 0x507C90
 soracheckifworldmapornot = 0x23405C0
 agrabahworldstatus = 0x2DEBC54
 monstroworldstatus = 0x2DEBC5A
-GummiTalkFlag1 = 0x2DEBC6E
-GummiTalkFlag2 = 0x2DEBC79
-GummiTalkFlag3 = 0x2DEBC77
-GummiTalkFlag4 = 0x2DEBC78
 DeepJungleFlag = 0x2DEB265
 MonstroFlag = 0x2DEB269
 NeverlandFlag = 0x2DEB26D
@@ -54,10 +50,6 @@ gummiworldcurrentworld = 0x506F90
 soracheckifworldmapornot = 0x233FBC0
 agrabahworldstatus = 0x2DEB254
 monstroworldstatus = 0x2DEB25A
-GummiTalkFlag1 = 0x2DEB26E
-GummiTalkFlag2 = 0x2DEB279
-GummiTalkFlag3 = 0x2DEB277
-GummiTalkFlag4 = 0x2DEB278
 DeepJungleFlag = 0x2DEA865
 MonstroFlag = 0x2DEA869
 NeverlandFlag = 0x2DEA86D
@@ -71,10 +63,6 @@ gummiworldcurrentworld = 0x506F90
 soracheckifworldmapornot = 0x233FBC0
 agrabahworldstatus = 0x2DEB254
 monstroworldstatus = 0x2DEB25A
-GummiTalkFlag1 = 0x2DEB26E
-GummiTalkFlag2 = 0x2DEB279
-GummiTalkFlag3 = 0x2DEB277
-GummiTalkFlag4 = 0x2DEB278
 DeepJungleFlag = 0x2DEA865
 MonstroFlag = 0x2DEA869
 NeverlandFlag = 0x2DEA86D
@@ -85,44 +73,24 @@ end
 
 
 function InstaGummi()
-if ReadByte(selectedworld) ~= 255 and ReadByte(soracheckifworldmapornot) == 7 then
-WriteByte(gummiworldcurrentworld, ReadByte(selectedworld))
-end
+	if ReadByte(selectedworld) == 18 or (ReadByte(selectedworld) >= 21 and ReadByte(selectedworld) <= 26) then
+		return
+	end
 
-if ReadByte(selectedworld) == 26 and ReadByte(soracheckifworldmapornot) == 7 then
-WriteByte(gummiworldcurrentworld, 15)
-end
+	if ReadByte(selectedworld) ~= 255 and ReadByte(soracheckifworldmapornot) == 7 then
+		WriteByte(gummiworldcurrentworld, ReadByte(selectedworld))
+	end
 
-if ReadByte(agrabahworldstatus) == 4 and ReadByte(soracheckifworldmapornot) == 7 then
-WriteByte(monstroworldstatus,3)
-end
+	if ReadByte(agrabahworldstatus) == 4 and ReadByte(soracheckifworldmapornot) == 7 then
+		WriteByte(monstroworldstatus, 3)
+	end
 
-if ReadByte(GummiTalkFlag1) < 0xFF then
-WriteByte(GummiTalkFlag1, 0xFF)
-end
+	if ReadByte(DeepJungleFlag) < 1 then
+		WriteByte(DeepJungleFlag, 1)
+	end
 
-if ReadByte(GummiTalkFlag2) < 0xFF then
-WriteByte(GummiTalkFlag2, 0xFF)
-end
-
-if ReadByte(GummiTalkFlag3) < 0xFF then
-WriteByte(GummiTalkFlag3, 0xFF)
-end
-
-if ReadByte(GummiTalkFlag4) < 0xFF then
-WriteByte(GummiTalkFlag4, 0xFF)
-end
-
-if ReadByte(DeepJungleFlag) < 1 then
-WriteByte(DeepJungleFlag, 1)
-end
-
-if ReadByte(MonstroFlag) < 4 then
-WriteByte(MonstroFlag, 4)
-end
-
-if ReadByte(NeverlandFlag) < 1 then
-WriteByte(NeverlandFlag, 1)
-end
+	if ReadByte(NeverlandFlag) < 1 then
+		WriteByte(NeverlandFlag, 1)
+	end
 
 end
